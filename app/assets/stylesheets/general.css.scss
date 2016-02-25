@@ -18,15 +18,19 @@ body {
 
 header {
 	width: 100%;
-	padding: 20px 30px;
+	padding: 10px 30px;
 	font-weight: 700;
 	font-size: 1.7rem;
 	background: #F7AB23;
 }
 
 header img {
-	width: 12px;
+  height: 30px;
 	vertical-align: middle;
+}
+
+header .user-information {
+  line-height: 30px;
 }
 
 .grid {
