@@ -1,0 +1,11 @@
+// Place all the styles related to the Puppies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.puppy {
+  img {
+    max-width: 100px;
+  }
+  .age {
+    font-size: 1.6rem;
+  }
+}

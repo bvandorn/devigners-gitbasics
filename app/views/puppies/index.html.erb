@@ -1,0 +1,16 @@
+<div class="centered">
+  <h1>Puppies</h1>
+  <ol>
+    <% @puppies.each do |puppy| %>
+      <li class="puppy">
+        <h2><%= puppy.name %> : Age <%= puppy.age %></h2>
+        <div><%= image_tag puppy.image %></div>
+        <div><%= link_to "Learn more about #{puppy.name}", puppy_path(puppy) %></div>
+        <div><%= link_to "Destroy #{puppy.name} the puppy :'(", puppy_path(puppy), method: :delete if current_user.admin %></div>
+      </li>
+    <% end %>
+  </ol>
+  <% if current_user.admin %>
+    <%= link_to "New Puppy", new_puppy_path %>
+  <% end %>
+</div>
