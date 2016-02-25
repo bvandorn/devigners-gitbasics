@@ -1,0 +1,11 @@
+<header>
+  <%= image_tag "icon.svg" %> <%= link_to "PUPPIES R US", root_path %>
+  <div class="user-information">
+    <%= link_to "Puppies", puppies_path %> | 
+    <% if current_user.nil? %>
+      <%= link_to "Sign In", new_user_session_path %>
+    <% else %>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    <% end %>
+  </div>
+</header>
