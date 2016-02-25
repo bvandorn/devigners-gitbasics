@@ -1,5 +1,5 @@
 <header>
-  <%= image_tag "icon.svg" %> <%= link_to "PUPPIES R US", root_path %>
+  <%= link_to image_tag("logo.png"), root_path %>
   <div class="user-information">
     <%= link_to "Puppies", puppies_path %> | 
     <% if current_user.nil? %>
